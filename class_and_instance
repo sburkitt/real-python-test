@@ -1,0 +1,26 @@
+class Dog(object):
+
+	#class atribute (all dogs)
+	species = 'mammal'
+	function = 'cute'
+
+
+	#initiailize
+	def __init__(self,name,age):
+		self.name = name
+		self.age = age
+
+#dog instances
+philo = Dog("Philo",5)
+mo = Dog("Mo",4)
+
+#Acces the attributes
+print("{} is {} and {} is {}.".format(
+	philo.name, philo.age, mo.name, mo.age))
+
+#Is Philo a mammal
+if philo.species == 'mammal':
+	print("{} is a {}".format(
+		philo.name, philo.species))
+
+
